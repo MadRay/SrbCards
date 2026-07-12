@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Base application theme. The actual Material 3 colour scheme is applied
+        programmatically via SrbCardsTheme in Compose, so this theme only needs
+        to configure the window background and edge-to-edge behaviour.
+    -->
+    <style name="Theme.SrbCards" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>

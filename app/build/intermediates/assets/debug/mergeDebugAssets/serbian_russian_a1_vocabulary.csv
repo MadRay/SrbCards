@@ -1,0 +1,67 @@
+﻿id,word_sr_sing,word_sr_plur,word_ru,gender,type,category
+1,Hvala,N/A,Спасибо,N/A,expression,Basics
+2,Molim,N/A,Пожалуйста,N/A,expression,Basics
+3,Izvolite,N/A,Пожалуйста (при подаче/встрече),N/A,expression,Basics
+4,Dobar dan,N/A,Добрый день,N/A,expression,Basics
+5,Zdravo,N/A,Привет / Здравствуйте,N/A,expression,Basics
+6,Do viđenja,N/A,До свидания,N/A,expression,Basics
+7,Da,N/A,Да,N/A,expression,Basics
+8,Ne,N/A,Нет,N/A,expression,Basics
+9,Čovek,Ljudi,Человек,m,noun,Family & People
+10,Žena,Žene,Женщина / Жена,f,noun,Family & People
+11,Dete,Deca,Ребенок,n,noun,Family & People
+12,Otac,Očevi,Отец,m,noun,Family & People
+13,Majka,Majke,Мать / Мама,f,noun,Family & People
+14,Sin,Sinovi,Сын,m,noun,Family & People
+15,Ćerka,Ćerke,Дочь,f,noun,Family & People
+16,Brat,Braća,Брат,m,noun,Family & People
+17,Sestra,Sestre,Сестра,f,noun,Family & People
+18,Prijatelj,Prijatelji,Друг / Приятель,m,noun,Family & People
+19,Hleb,Hlebovi,Хлеб,m,noun,Food & Drinks
+20,Voda,Vode,Вода,f,noun,Food & Drinks
+21,Kafa,Kafe,Кофе,f,noun,Food & Drinks
+22,Čaj,Čajevi,Чай,m,noun,Food & Drinks
+23,Mleko,Mleka,Молоко,n,noun,Food & Drinks
+24,Sok,Sokovi,Сок,m,noun,Food & Drinks
+25,Meso,Mesa,Мясо,n,noun,Food & Drinks
+26,Voće,N/A,Фрукты,n,noun,Food & Drinks
+27,Povrće,N/A,Овощи,n,noun,Food & Drinks
+28,Račun,Računi,Счет (чек),m,noun,Food & Drinks
+29,Kuća,Kuće,Дом,f,noun,Places & City
+30,Grad,Gradovi,Город,m,noun,Places & City
+31,Ulica,Ulice,Улица,f,noun,Places & City
+32,Stan,Stanovi,Квартира,m,noun,Places & City
+33,Prodavnica,Prodavnice,Магазин,f,noun,Places & City
+34,Škola,Škole,Школа,f,noun,Places & City
+35,Restoran,Restorani,Ресторан,m,noun,Places & City
+36,Hotel,Hoteli,Отель,m,noun,Places & City
+37,Bolnica,Bolnice,Больница,f,noun,Places & City
+38,Mesto,Mesta,Место,n,noun,Places & City
+39,Sto,Stolovi,Стол,m,noun,Objects & Items
+40,Stolica,Stolice,Стул,f,noun,Objects & Items
+41,Knjiga,Knjige,Книга,f,noun,Objects & Items
+42,Telefon,Telefoni,Телефон,m,noun,Objects & Items
+43,Ključ,Ključevi,Ключ,m,noun,Objects & Items
+44,Prozor,Prozori,Окно,m,noun,Objects & Items
+45,Vrata,Vrata,Дверь,n,noun,Objects & Items
+46,Torba,Torbe,Сумка,f,noun,Objects & Items
+47,Dan,Dani,День,m,noun,Time & Calendar
+48,Noć,Noći,Ночь,f,noun,Time & Calendar
+49,Nedelja,Nedelje,Неделя / Воскресенье,f,noun,Time & Calendar
+50,Mesec,Meseci,Месяц / Луна,m,noun,Time & Calendar
+51,Godina,Godine,Год,f,noun,Time & Calendar
+52,Jutro,Jutra,Утро,n,noun,Time & Calendar
+53,Veče,Večeri,Вечер,n,noun,Time & Calendar
+54,Sutra,N/A,Завтра,N/A,adverb,Time & Calendar
+55,Danas,N/A,Сегодня,N/A,adverb,Time & Calendar
+56,Juče,N/A,Вчера,N/A,adverb,Time & Calendar
+57,Biti (sam),N/A,Быть (я есть),N/A,verb,Verbs
+58,Imati (imam),N/A,Иметь (у меня есть),N/A,verb,Verbs
+59,Moći (mogu),N/A,Мочь (я могу),N/A,verb,Verbs
+60,Želeti (želim),N/A,Желать / Хотеть,N/A,verb,Verbs
+61,Govoriti (govorim),N/A,Говорить,N/A,verb,Verbs
+62,Razumeti (razumem),N/A,Понимать,N/A,verb,Verbs
+63,Raditi (radim),N/A,Работать / Делать,N/A,verb,Verbs
+64,Ići (idem),N/A,Идти,N/A,verb,Verbs
+65,Kupiti (kupim),N/A,Купить,N/A,verb,Verbs
+66,Znati (znam),N/A,Знать,N/A,verb,Verbs
