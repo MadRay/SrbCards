@@ -1,12 +1,12 @@
 ﻿id,word_sr_sing,word_sr_plur,word_ru,gender,type,category
-1,Hvala,N/A,Спасибо,N/A,expression,Basics
-2,Molim,N/A,Пожалуйста,N/A,expression,Basics
-3,Izvolite,N/A,Пожалуйста (при подаче/встрече),N/A,expression,Basics
-4,Dobar dan,N/A,Добрый день,N/A,expression,Basics
-5,Zdravo,N/A,Привет / Здравствуйте,N/A,expression,Basics
-6,Do viđenja,N/A,До свидания,N/A,expression,Basics
-7,Da,N/A,Да,N/A,expression,Basics
-8,Ne,N/A,Нет,N/A,expression,Basics
+1,Hvala,,Спасибо,,expression,Basics
+2,Molim,,Пожалуйста,,expression,Basics
+3,Izvolite,,Пожалуйста (при подаче/встрече),,expression,Basics
+4,Dobar dan,,Добрый день,,expression,Basics
+5,Zdravo,,Привет / Здравствуйте,,expression,Basics
+6,Do viđenja,,До свидания,,expression,Basics
+7,Da,,Да,,expression,Basics
+8,Ne,,Нет,,expression,Basics
 9,Čovek,Ljudi,Человек,m,noun,Family & People
 10,Žena,Žene,Женщина / Жена,f,noun,Family & People
 11,Dete,Deca,Ребенок,n,noun,Family & People
@@ -24,8 +24,8 @@
 23,Mleko,Mleka,Молоко,n,noun,Food & Drinks
 24,Sok,Sokovi,Сок,m,noun,Food & Drinks
 25,Meso,Mesa,Мясо,n,noun,Food & Drinks
-26,Voće,N/A,Фрукты,n,noun,Food & Drinks
-27,Povrće,N/A,Овощи,n,noun,Food & Drinks
+26,Voće,,Фрукты,n,noun,Food & Drinks
+27,Povrće,,Овощи,n,noun,Food & Drinks
 28,Račun,Računi,Счет (чек),m,noun,Food & Drinks
 29,Kuća,Kuće,Дом,f,noun,Places & City
 30,Grad,Gradovi,Город,m,noun,Places & City
@@ -52,16 +52,983 @@
 51,Godina,Godine,Год,f,noun,Time & Calendar
 52,Jutro,Jutra,Утро,n,noun,Time & Calendar
 53,Veče,Večeri,Вечер,n,noun,Time & Calendar
-54,Sutra,N/A,Завтра,N/A,adverb,Time & Calendar
-55,Danas,N/A,Сегодня,N/A,adverb,Time & Calendar
-56,Juče,N/A,Вчера,N/A,adverb,Time & Calendar
-57,Biti (sam),N/A,Быть (я есть),N/A,verb,Verbs
-58,Imati (imam),N/A,Иметь (у меня есть),N/A,verb,Verbs
-59,Moći (mogu),N/A,Мочь (я могу),N/A,verb,Verbs
-60,Želeti (želim),N/A,Желать / Хотеть,N/A,verb,Verbs
-61,Govoriti (govorim),N/A,Говорить,N/A,verb,Verbs
-62,Razumeti (razumem),N/A,Понимать,N/A,verb,Verbs
-63,Raditi (radim),N/A,Работать / Делать,N/A,verb,Verbs
-64,Ići (idem),N/A,Идти,N/A,verb,Verbs
-65,Kupiti (kupim),N/A,Купить,N/A,verb,Verbs
-66,Znati (znam),N/A,Знать,N/A,verb,Verbs
+54,Sutra,,Завтра,,adverb,Time & Calendar
+55,Danas,,Сегодня,,adverb,Time & Calendar
+56,Juče,,Вчера,,adverb,Time & Calendar
+57,Biti (sam),,Быть (я есть),,verb,Verbs
+58,Imati (imam),,Иметь (у меня есть),,verb,Verbs
+59,Moći (mogu),,Мочь (я могу),,verb,Verbs
+60,Želeti (želim),,Желать / Хотеть,,verb,Verbs
+61,Govoriti (govorim),,Говорить,,verb,Verbs
+62,Razumeti (razumem),,Понимать,,verb,Verbs
+63,Raditi (radim),,Работать / Делать,,verb,Verbs
+64,Ići (idem),,Идти,,verb,Verbs
+65,Kupiti (kupim),,Купить,,verb,Verbs
+66,Znati (znam),,Знать,,verb,Verbs
+67,Vreme,Vremena,Время,n,noun,Time & Calendar
+68,Posao,Poslovi,Дело,m,noun,Work & Study
+69,Život,Životi,Жизнь,m,noun,Basics
+70,Ruka,Ruke,Рука,f,noun,Body & Health
+71,Put,Putovanja,Раз,m,noun,Basics
+72,Rad,Radovi,Работа,m,noun,Work & Study
+73,Reč,Reči,Слово,f,noun,Communication
+74,Lice,Lica,Лицо,n,noun,Body & Health
+75,Oko,Oči,Глаз,n,noun,Body & Health
+76,Pitanje,Pitanja,Вопрос,n,noun,Communication
+77,Strana,Strane,Сторона,f,noun,Places & City
+78,Zemlja,Zemlje,Страна,f,noun,Places & City
+79,Svet,Svetovi,Мир,m,noun,Basics
+80,Slučaj,Slučajevi,Случай,m,noun,Basics
+81,Glava,Glave,Голова,f,noun,Body & Health
+82,Sila,Sile,Сила,f,noun,Basics
+83,Kraj,Krajevi,Конец,m,noun,Time & Calendar
+84,Pogled,Pogledi,Вид,m,noun,Basics
+85,Sistem,Sistemi,Система,m,noun,Basics
+86,Deo,Delovi,Часть,m,noun,Basics
+87,Odnos,Odnosi,Отношение,m,noun,Communication
+88,Novac,,Деньги,m,noun,Basics
+89,Auto,Automobili,Машина,m,noun,Objects & Items
+90,Problem,Problemi,Проблема,m,noun,Basics
+91,Sat,Sati,Час,m,noun,Time & Calendar
+92,Pravo,Prava,Право,n,noun,Basics
+93,Noga,Noge,Нога,f,noun,Body & Health
+94,Rešenje,Rešenja,Решение,n,noun,Basics
+95,Slika,Slike,Образ,f,noun,Objects & Items
+96,Istorija,Istorije,История,f,noun,Work & Study
+97,Vlast,Vlasti,Власть,f,noun,Basics
+98,Zakon,Zakoni,Закон,m,noun,Basics
+99,Rat,Ratovi,Война,m,noun,Basics
+100,Bog,Bogovi,Бог,m,noun,Basics
+101,Glas,Glasovi,Голос,m,noun,Communication
+102,Hiljada,Hiljade,Тысяча,f,noun,Basics
+103,Prijatelj,Prijatelji,Друг,m,noun,Family & People
+104,Žena,Žene,Женщина,f,noun,Family & People
+105,Zemlja,Zemlje,Земля,f,noun,Places & City
+106,Mogućnost,Mogućnosti,Возможность,f,noun,Basics
+107,Rezultat,Rezultati,Результат,m,noun,Basics
+108,Ime,Imena,Имя,n,noun,Basics
+109,Oblast,Oblasti,Область,f,noun,Places & City
+110,Članak,Članci,Статья,m,noun,Work & Study
+111,Broj,Brojevi,Число,m,noun,Basics
+112,Kompanija,Kompanije,Компания,f,noun,Work & Study
+113,Narod,Narodi,Народ,m,noun,Family & People
+114,Supruga,Supruge,Жена,f,noun,Family & People
+115,Grupa,Grupe,Группа,f,noun,Basics
+116,Razvoj,,Развитие,m,noun,Basics
+117,Proces,Procesi,Процесс,m,noun,Basics
+118,Sud,Sudovi,Суд,m,noun,Basics
+119,Uslov,Uslovi,Условие,m,noun,Basics
+120,Sredstvo,Sredstva,Средство,n,noun,Basics
+121,Početak,Počeci,Начало,m,noun,Time & Calendar
+122,Svetlo,Svetla,Свет,n,noun,Basics
+123,Vreme,,Пора,n,noun,Time & Calendar
+124,Put,Putevi,Путь,m,noun,Places & City
+125,Duša,Duše,Душа,f,noun,Body & Health
+126,Nivo,Nivoi,Уровень,m,noun,Basics
+127,Oblik,Oblici,Форма,m,noun,Basics
+128,Veza,Veze,Связь,f,noun,Communication
+129,Minut,Minuti,Минута,m,noun,Time & Calendar
+130,Kvalitet,Kvaliteti,Качество,m,noun,Basics
+131,Misao,Misli,Мысль,f,noun,Communication
+132,Put,Putevi,Дорога,m,noun,Places & City
+133,Majka,Majke,Мать,f,noun,Family & People
+134,Akcija,Akcije,Действие,f,noun,Basics
+135,Mesec,Meseci,Месяц,m,noun,Time & Calendar
+136,Država,Države,Государство,f,noun,Places & City
+137,Jezik,Jezici,Язык,m,noun,Communication
+138,Ljubav,Ljubavi,Любовь,f,noun,Basics
+139,Pogled,Pogledi,Взгляд,m,noun,Basics
+140,Mama,Mame,Мама,f,noun,Family & People
+141,Vek,Vekovi,Век,m,noun,Time & Calendar
+142,Cilj,Ciljevi,Цель,m,noun,Basics
+143,Društvo,Društva,Общество,n,noun,Basics
+144,Delatnost,Delatnosti,Деятельность,f,noun,Work & Study
+145,Organizacija,Organizacije,Организация,f,noun,Work & Study
+146,Predsednik,Predsednici,Президент,m,noun,Work & Study
+147,Soba,Sobe,Комната,f,noun,Places & City
+148,Red,Redovi,Порядок,m,noun,Basics
+149,Trenutak,Trenuci,Момент,m,noun,Time & Calendar
+150,Pozorište,Pozorišta,Театр,n,noun,Places & City
+151,Pismo,Pisma,Письмо,n,noun,Communication
+152,Pomoć,Pomoći,Помощь,f,noun,Basics
+153,Situacija,Situacije,Ситуация,f,noun,Basics
+154,Uloga,Uloge,Роль,f,noun,Basics
+155,Rublja,Rublje,Рубль,f,noun,Basics
+156,Smisao,Smislovi,Смысл,m,noun,Basics
+157,Stanje,Stanja,Состояние,n,noun,Basics
+158,Organ,Organi,Орган,m,noun,Body & Health
+159,Pažnja,,Внимание,f,noun,Basics
+160,Telo,Tela,Тело,n,noun,Body & Health
+161,Rad,Radovi,Труд,m,noun,Work & Study
+162,Mera,Mere,Мера,f,noun,Basics
+163,Smrt,Smrti,Смерть,f,noun,Basics
+164,Tržište,Tržišta,Рынок,n,noun,Places & City
+165,Program,Programi,Программа,m,noun,Basics
+166,Zadatak,Zadaci,Задача,m,noun,Work & Study
+167,Preduzeće,Preduzeća,Предприятие,n,noun,Work & Study
+168,Razgovor,Razgovori,Разговор,m,noun,Communication
+169,Vlada,Vlade,Правительство,f,noun,Places & City
+170,Porodica,Porodice,Семья,f,noun,Family & People
+171,Proizvodnja,Proizvodnje,Производство,f,noun,Work & Study
+172,Informacija,Informacije,Информация,f,noun,Communication
+173,Položaj,Položaji,Положение,m,noun,Basics
+174,Centar,Centri,Центр,m,noun,Places & City
+175,Odgovor,Odgovori,Ответ,m,noun,Communication
+176,Muž,Muževi,Муж,m,noun,Family & People
+177,Autor,Autori,Автор,m,noun,Work & Study
+178,Zid,Zidovi,Стена,m,noun,Places & City
+179,Interes,Interesi,Интерес,m,noun,Basics
+180,Federacija,Federacije,Федерация,f,noun,Places & City
+181,Pravilo,Pravila,Правило,n,noun,Basics
+182,Upravljanje,Upravljanja,Управление,n,noun,Work & Study
+183,Muškarac,Muškarci,Мужчина,m,noun,Family & People
+184,Ideja,Ideje,Идея,f,noun,Basics
+185,Partija,Partije,Партия,f,noun,Basics
+186,Savet,Saveti,Совет,m,noun,Communication
+187,Račun,Računi,Счет,m,noun,Basics
+188,Srce,Srca,Сердце,n,noun,Body & Health
+189,Pokret,Pokreti,Движение,m,noun,Basics
+190,Stvar,Stвари,Вещь,f,noun,Objects & Items
+191,Materijal,Materijali,Материал,m,noun,Objects & Items
+192,Nedelja,Nedelje,Неделя,f,noun,Time & Calendar
+193,Osećanje,Osećanja,Чувство,n,noun,Basics
+194,Poglavlje,Poglavlja,Глава,n,noun,Objects & Items
+195,Nauka,Nauke,Наука,f,noun,Work & Study
+196,Red,Redovi,Ряд,m,noun,Basics
+197,Novine,Novine,Газета,f,noun,Objects & Items
+198,Uzrok,Uzroci,Причина,m,noun,Basics
+199,Rame,Ramena,Плечо,n,noun,Body & Health
+200,Cena,Cene,Цена,f,noun,Basics
+201,Plan,Planovi,План,m,noun,Work & Study
+202,Govor,Govori,Речь,m,noun,Communication
+203,Tačka,Tačke,Точка,f,noun,Basics
+204,Osnova,Osnove,Основа,f,noun,Basics
+205,Drug,Drugovi,Товарищ,m,noun,Family & People
+206,Kultura,Kulture,Культура,f,noun,Basics
+207,Podaci,Podaci,Данные,m,noun,Basics
+208,Mišljenje,Mišljenja,Мнение,n,noun,Communication
+209,Dokument,Dokumenti,Документ,m,noun,Work & Study
+210,Institut,Instituti,Институт,m,noun,Work & Study
+211,Potez,Potezi,Ход,m,noun,Basics
+212,Projekat,Projekti,Проект,m,noun,Work & Study
+213,Sastanak,Sastanci,Встреча,m,noun,Basics
+214,Direktor,Direktori,Директор,m,noun,Work & Study
+215,Rok,Rokovi,Срок,m,noun,Time & Calendar
+216,Prst,Prsti,Палец,m,noun,Body & Health
+217,Iskustvo,Iskustva,Опыт,n,noun,Basics
+218,Služba,Službe,Служба,f,noun,Work & Study
+219,Sudbina,Sudbine,Судьба,f,noun,Basics
+220,Devojka,Devojke,Девушка,f,noun,Family & People
+221,Red,Redovi,Очередь,m,noun,Basics
+222,Šuma,Šume,Лес,f,noun,Places & City
+223,Sastav,Sastavi,Состав,m,noun,Basics
+224,Član,Članovi,Член,m,noun,Family & People
+225,Količina,Količine,Количество,f,noun,Basics
+226,Događaj,Događaji,Событие,m,noun,Basics
+227,Objekat,Objekti,Объект,m,noun,Places & City
+228,Sala,Sale,Зал,f,noun,Places & City
+229,Stvaranje,Stvaranja,Создание,n,noun,Basics
+230,Značenje,Značenja,Значение,n,noun,Communication
+231,Period,Periodi,Период,m,noun,Time & Calendar
+232,Korak,Koraci,Шаг,m,noun,Basics
+233,Umetnost,Umetnosti,Искусство,f,noun,Basics
+234,Struktura,Strukture,Структура,f,noun,Basics
+235,Broj,Brojevi,Номер,m,noun,Basics
+236,Primer,Primeri,Пример,m,noun,Basics
+237,Istraživanje,Istraživanja,Исследование,n,noun,Work & Study
+238,Građanin,Građani,Гражданин,m,noun,Family & People
+239,Igra,Igre,Игра,f,noun,Basics
+240,Šef,Šefovi,Начальник,m,noun,Work & Study
+241,Rast,Rastovi,Рост,m,noun,Basics
+242,Tema,Teme,Тема,f,noun,Communication
+243,Princip,Principi,Принцип,m,noun,Basics
+244,Metod,Metodi,Метод,m,noun,Work & Study
+245,Tip,Tipovi,Тип,m,noun,Basics
+246,Film,Filmovi,Фильм,m,noun,Basics
+247,Kraj,Krajevi,Край,m,noun,Places & City
+248,Gost,Gosti,Гость,m,noun,Family & People
+249,Vazduh,,Воздух,m,noun,Basics
+250,Karakter,Karakteri,Характер,m,noun,Basics
+251,Borba,Borbe,Борьба,f,noun,Basics
+252,Korišćenje,Korišćenja,Использование,n,noun,Basics
+253,Veličina,Veličine,Размер,f,noun,Basics
+254,Obrazovanje,Obrazovanja,Образование,n,noun,Work & Study
+255,Dečak,Dečaci,Мальчик,m,noun,Family & People
+256,Krv,,Кровь,f,noun,Body & Health
+257,Oblast,Oblasti,Район,f,noun,Places & City
+258,Nebo,Nebesa,Небо,n,noun,Places & City
+259,Vojska,Vojske,Армия,f,noun,Basics
+260,Razred,Razredi,Класс,m,noun,Work & Study
+261,Predstavnik,Predstavnici,Представитель,m,noun,Work & Study
+262,Učešće,Učešća,Участие,n,noun,Basics
+263,Devojčica,Devojčice,Девочка,f,noun,Family & People
+264,Politika,Politike,Политика,f,noun,Basics
+265,Heroj,Heroji,Герой,m,noun,Basics
+266,Slika,Slike,Картина,f,noun,Objects & Items
+267,Dolar,Dolari,Доллар,m,noun,Basics
+268,Leđa,Leđa,Спина,n,noun,Body & Health
+269,Teritorija,Teritorije,Территория,f,noun,Places & City
+270,Pol,Polovi,Пол,m,noun,Basics
+271,Polje,Polja,Поле,n,noun,Places & City
+272,Promena,Promene,Изменение,f,noun,Basics
+273,Pravac,Pravci,Направление,m,noun,Basics
+274,Crtež,Crteži,Рисунок,m,noun,Objects & Items
+275,Tok,Tokovi,Течение,m,noun,Basics
+276,Crkva,Crkve,Церковь,f,noun,Places & City
+277,Banka,Banke,Банк,f,noun,Places & City
+278,Scena,Scene,Сцена,f,noun,Basics
+279,Stanovništvo,,Население,n,noun,Places & City
+280,Većina,,Большинство,f,noun,Basics
+281,Muzika,Muzike,Музыка,f,noun,Basics
+282,Istina,Istine,Правда,f,noun,Basics
+283,Sloboda,Slobode,Свобода,f,noun,Basics
+284,Pamćenje,Pamćenja,Память,n,noun,Basics
+285,Tim,Timovi,Команда,m,noun,Basics
+286,Savez,Savezi,Союз,m,noun,Basics
+287,Lekar,Lekari,Врач,m,noun,Work & Study
+288,Ugovor,Ugovori,Договор,m,noun,Work & Study
+289,Drvo,Drveće,Дерево,n,noun,Places & City
+290,Činjenica,Činjenice,Факт,f,noun,Basics
+291,Domaćin,Domaćini,Хозяин,m,noun,Family & People
+292,Priroda,Prirode,Природа,f,noun,Places & City
+293,Ugao,Uglovi,Угол,m,noun,Places & City
+294,Pozicija,Pozicije,Позиция,f,noun,Basics
+295,Dvorište,Dvorišta,Двор,n,noun,Places & City
+296,Pisac,Pisci,Писатель,m,noun,Work & Study
+297,Avion,Avioni,Самолет,m,noun,Objects & Items
+298,Obim,Obimi,Объем,m,noun,Basics
+299,Rod,Rodovi,Род,m,noun,Basics
+300,Sunce,Sunca,Солнце,n,noun,Places & City
+301,Vera,Vere,Вера,f,noun,Basics
+302,Obala,Obale,Берег,f,noun,Places & City
+303,Predstava,Predstave,Спектакль,f,noun,Basics
+304,Firma,Firme,Фирма,f,noun,Work & Study
+305,Način,Načini,Способ,m,noun,Basics
+306,Fabrika,Fabrike,Завод,f,noun,Work & Study
+307,Boja,Boje,Цвет,f,noun,Basics
+308,Časopis,Časopisi,Журнал,m,noun,Objects & Items
+309,Rukovodilac,Rukovodioci,Руководитель,m,noun,Work & Study
+310,Stručnjak,Stručnjaci,Специалист,m,noun,Work & Study
+311,Ocena,Ocene,Оценка,f,noun,Work & Study
+312,Region,Regioni,Регион,m,noun,Places & City
+313,Pesma,Pesme,Песня,f,noun,Basics
+314,Procenat,Procenti,Процент,m,noun,Basics
+315,Roditelj,Roditelji,Родитель,m,noun,Family & People
+316,More,Mora,Море,n,noun,Places & City
+317,Zahtev,Zahtevi,Требование,m,noun,Basics
+318,Osnova,Osnove,Основание,f,noun,Basics
+319,Polovina,Polovine,Половина,f,noun,Basics
+320,Roman,Romani,Роман,m,noun,Objects & Items
+321,Krug,Krugovi,Круг,m,noun,Basics
+322,Analiza,Analize,Анализ,f,noun,Work & Study
+323,Poezija,,Стихи,f,noun,Objects & Items
+324,Automobil,Automobili,Автомобиль,m,noun,Objects & Items
+325,Ekonomija,Ekonomije,Экономика,f,noun,Work & Study
+326,Literatura,Literature,Литература,f,noun,Work & Study
+327,Papir,Papiri,Бумага,m,noun,Objects & Items
+328,Pesnik,Pesnici,Поэт,m,noun,Work & Study
+329,Stepen,Stepeni,Степень,m,noun,Basics
+330,Gospodin,Gospoda,Господин,m,noun,Family & People
+331,Nada,Nade,Надежда,f,noun,Basics
+332,Predmet,Predmeti,Предмет,m,noun,Objects & Items
+333,Varijanta,Varijante,Вариант,f,noun,Basics
+334,Ministar,Ministri,Министр,m,noun,Work & Study
+335,Granica,Granice,Граница,f,noun,Places & City
+336,Duh,Duhovi,Дух,m,noun,Basics
+337,Model,Modeli,Модель,m,noun,Objects & Items
+338,Operacija,Operacije,Операция,f,noun,Basics
+339,Par,Parovi,Пара,m,noun,Basics
+340,San,Snovi,Сон,m,noun,Basics
+341,Ime,Imena,Название,n,noun,Basics
+342,Um,Umovi,Ум,m,noun,Basics
+343,Povod,Povodi,Повод,m,noun,Basics
+344,Starac,Starci,Старик,m,noun,Family & People
+345,Milion,Milioni,Миллион,m,noun,Basics
+346,Uspeh,Uspesi,Успех,m,noun,Basics
+347,Sreća,Sreće,Счастье,f,noun,Basics
+348,Momci,Momci,Ребята,m,noun,Family & People
+349,Kabinet,Kabineti,Кабинет,m,noun,Work & Study
+350,Prostor,Prostori,Пространство,m,noun,Basics
+351,Izlaz,Izlazi,Выход,m,noun,Places & City
+352,Udarac,Udarci,Удар,m,noun,Basics
+353,Baza,Baze,База,f,noun,Places & City
+354,Znanje,Znanja,Знание,n,noun,Work & Study
+355,Tekst,Tekstovi,Текст,m,noun,Communication
+356,Zaštita,Zaštite,Защита,f,noun,Basics
+357,Rukovodstvo,Rukovodstva,Руководство,n,noun,Work & Study
+358,Trg,Trgovi,Площадь,m,noun,Places & City
+359,Svest,,Сознание,f,noun,Basics
+360,Godine,,Возраст,f,noun,Basics
+361,Učesnik,Učesnici,Участник,m,noun,Basics
+362,Zemljište,Zemljišta,Участок,n,noun,Places & City
+363,Tačka,Tačke,Пункт,f,noun,Basics
+364,Linija,Linije,Линия,f,noun,Basics
+365,Želja,Želje,Желание,f,noun,Basics
+366,Tata,Tate,Папа,m,noun,Family & People
+367,Doktor,Doktori,Доктор,m,noun,Work & Study
+368,Usna,Usne,Губа,f,noun,Body & Health
+369,Sredina,Sredine,Среда,f,noun,Places & City
+370,Predsednik,Predsednici,Председатель,m,noun,Work & Study
+371,Predstava,Predstave,Представление,f,noun,Basics
+372,Vojnik,Vojnici,Солдат,m,noun,Work & Study
+373,Umetnik,Umetnici,Художник,m,noun,Work & Study
+374,Kosa,Kose,Волос,f,noun,Body & Health
+375,Oružje,Oružja,Оружие,n,noun,Objects & Items
+376,Slaganje,Slaganja,Соответствие,n,noun,Basics
+377,Vetar,Vetrovi,Ветер,m,noun,Places & City
+378,Momak,Momci,Парень,m,noun,Family & People
+379,Vid,,Зрение,m,noun,Body & Health
+380,General,Generali,Генерал,m,noun,Work & Study
+381,Vatra,Vatre,Огонь,f,noun,Basics
+382,Pojam,Pojmovi,Понятие,m,noun,Basics
+383,Izgradnja,Izgradnje,Строительство,f,noun,Work & Study
+384,Uvo,Uši,Ухо,n,noun,Body & Health
+385,Grudi,Grudi,Грудь,f,noun,Body & Health
+386,Nos,Nosovi,Нос,m,noun,Body & Health
+387,Strah,Strahovi,Страх,m,noun,Basics
+388,Usluga,Usluge,Услуга,f,noun,Basics
+389,Sadržaj,Sadržaji,Содержание,m,noun,Basics
+390,Radost,Radosti,Радость,f,noun,Basics
+391,Bezbednost,Bezbednosti,Безопасность,f,noun,Basics
+392,Proizvod,Proizvodi,Продукт,m,noun,Objects & Items
+393,Kompleks,Kompleksi,Комплекс,m,noun,Basics
+394,Biznis,Biznisi,Бизнес,m,noun,Work & Study
+395,Bašta,Bašte,Сад,f,noun,Places & City
+396,Zaposleni,Zaposleni,Сотрудник,m,noun,Work & Study
+397,Leto,Leta,Лето,n,noun,Time & Calendar
+398,Kurs,Kursevi,Курс,m,noun,Work & Study
+399,Predlog,Predlozi,Предложение,m,noun,Communication
+400,Usta,Usta,Рот,n,noun,Body & Health
+401,Tehnologija,Tehnologije,Технология,f,noun,Work & Study
+402,Reforma,Reforme,Реформа,f,noun,Basics
+403,Odsustvo,Odsustva,Отсутствие,n,noun,Basics
+404,Pas,Psi,Собака,m,noun,Objects & Items
+405,Kamen,Kamenje,Камень,m,noun,Objects & Items
+406,Budućnost,Budućnosti,Будущее,f,noun,Time & Calendar
+407,Priča,Priče,Рассказ,f,noun,Communication
+408,Kontrola,Kontrole,Контроль,f,noun,Basics
+409,Reka,Reke,Река,f,noun,Places & City
+410,Proizvodnja,Proizvodnje,Продукция,f,noun,Work & Study
+411,Iznos,Iznosi,Сумма,m,noun,Basics
+412,Tehnika,Tehnike,Техника,f,noun,Basics
+413,Zgrada,Zgrade,Здание,f,noun,Places & City
+414,Sfera,Sfere,Сфера,f,noun,Basics
+415,Potreba,Potrebe,Необходимость,f,noun,Basics
+416,Fond,Fondovi,Фонд,m,noun,Basics
+417,Priprema,Pripreme,Подготовка,f,noun,Work & Study
+418,List,Listovi,Лист,m,noun,Objects & Items
+419,Republika,Republike,Республика,f,noun,Places & City
+420,Domaćinstvo,Domaćinstva,Хозяйство,n,noun,Places & City
+421,Volja,Volje,Воля,f,noun,Basics
+422,Budžet,Budžeti,Бюджет,m,noun,Basics
+423,Sneg,Snegovi,Снег,m,noun,Places & City
+424,Selo,Sela,Деревня,n,noun,Places & City
+425,Čovek,Ljudi,Мужик,m,noun,Family & People
+426,Element,Elementi,Элемент,m,noun,Basics
+427,Okolnost,Okolnosti,Обстоятельство,f,noun,Basics
+428,Nemac,Nemci,Немец,m,noun,Family & People
+429,Pobeda,Pobede,Победа,f,noun,Basics
+430,Izvor,Izvori,Источник,m,noun,Basics
+431,Zvezda,Zvezde,Звезда,f,noun,Places & City
+432,Izbor,Izbori,Выбор,m,noun,Basics
+433,Masa,Mase,Масса,f,noun,Basics
+434,Rezultat,Rezultati,Итог,m,noun,Basics
+435,Praksa,Prakse,Практика,f,noun,Work & Study
+436,Održavanje,Održavanja,Проведение,n,noun,Basics
+437,Džep,Džepovi,Карман,m,noun,Objects & Items
+438,Slava,Slave,Слава,f,noun,Basics
+439,Kuhinja,Kuhinje,Кухня,f,noun,Places & City
+440,Definicija,Definicije,Определение,f,noun,Communication
+441,Funkcija,Funkcije,Функция,f,noun,Basics
+442,Vojska,Vojske,Войско,f,noun,Basics
+443,Komisija,Komisije,Комиссия,f,noun,Work & Study
+444,Primena,Primene,Применение,f,noun,Basics
+445,Kapetan,Kapetani,Капитан,m,noun,Work & Study
+446,Radnik,Radnici,Работник,m,noun,Work & Study
+447,Obezbeđenje,Obezbeđenja,Обеспечение,n,noun,Basics
+448,Oficir,Oficiri,Офицер,m,noun,Work & Study
+449,Prezime,Prezimena,Фамилия,n,noun,Family & People
+450,Granica,Granice,Предел,f,noun,Basics
+451,Izbori,Izbori,Выборы,m,noun,Basics
+452,Naučник,Naučnici,Ученый,m,noun,Work & Study
+453,Flaša,Flaše,Бутылка,f,noun,Objects & Items
+454,Borba,Borbe,Бой,f,noun,Basics
+455,Teorija,Teorije,Теория,f,noun,Work & Study
+456,Zona,Zone,Зона,f,noun,Places & City
+457,Odeljenje,Odeljenja,Отдел,n,noun,Work & Study
+458,Zub,Zubi,Зуб,m,noun,Body & Health
+459,Razvoj,Razvoji,Разработка,m,noun,Work & Study
+460,Ličnost,Ličnosti,Личность,f,noun,Family & People
+461,Planina,Planine,Гора,f,noun,Places & City
+462,Roba,Robe,Товар,f,noun,Objects & Items
+463,Metar,Metri,Метр,m,noun,Basics
+464,Prazник,Praznici,Праздник,m,noun,Time & Calendar
+465,Uticaj,Uticaji,Влияние,m,noun,Basics
+466,Čitalac,Čitaoci,Читатель,m,noun,Work & Study
+467,Zadovoljstvo,Zadovoljstva,Удовольствие,n,noun,Basics
+468,Glumac,Glumci,Актер,m,noun,Work & Study
+469,Suza,Suze,Слеза,f,noun,Body & Health
+470,Odgovornost,Odgovornosti,Ответственность,f,noun,Basics
+471,Učitelj,Učitelji,Учитель,m,noun,Work & Study
+472,Čin,Činovi,Акт,m,noun,Basics
+473,Bol,Bolovi,Боль,m,noun,Body & Health
+474,Mnoštvo,Mnoštva,Множество,n,noun,Basics
+475,Karakteristika,Karakteristike,Особенность,f,noun,Basics
+476,Pokazatelj,Pokazatelji,Показатель,m,noun,Basics
+477,Brod,Brodovi,Корабль,m,noun,Objects & Items
+478,Zvuk,Zvuci,Звук,m,noun,Basics
+479,Utisak,Utisci,Впечатление,m,noun,Basics
+480,Detalj,Detalji,Частность,m,noun,Basics
+481,Detinjstvo,Detinjstva,Детство,n,noun,Time & Calendar
+482,Zaključak,Zaključci,Вывод,m,noun,Communication
+483,Profesor,Profesori,Профессор,m,noun,Work & Study
+484,Udeo,Udeli,Доля,m,noun,Basics
+485,Norma,Norme,Норма,f,noun,Basics
+486,Prošlost,Prošlosti,Прошлое,f,noun,Time & Calendar
+487,Komandant,Komandanti,Командир,m,noun,Work & Study
+488,Hodnik,Hodnici,Коридор,m,noun,Places & City
+489,Podrška,Podrške,Поддержка,f,noun,Basics
+490,Okvir,Okviri,Рамка,m,noun,Objects & Items
+491,Neprijatelj,Neprijatelji,Враг,m,noun,Family & People
+492,Faza,Faze,Этап,f,noun,Basics
+493,Đavo,Đavoli,Черт,m,noun,Family & People
+494,Deda,Dede,Дед,m,noun,Family & People
+495,Sastanak,Sastanci,Собрание,m,noun,Work & Study
+496,Prijem,Prijemi,Прием,m,noun,Basics
+497,Bolest,Bolesti,Болезнь,f,noun,Body & Health
+498,Ćelija,Ćelije,Клетка,f,noun,Body & Health
+499,Koža,Kože,Кожа,f,noun,Body & Health
+500,Izjava,Izjave,Заявление,f,noun,Communication
+501,Pokušaj,Pokušaji,Попытка,m,noun,Basics
+502,Poređenje,Poređenja,Сравнение,n,noun,Basics
+503,Proračun,Proračuni,Расчет,m,noun,Work & Study
+504,Poslanik,Poslanici,Депутат,m,noun,Work & Study
+505,Odbor,Odbori,Комитет,m,noun,Work & Study
+506,Znak,Znakovi,Знак,m,noun,Basics
+507,Ujak,Ujaci,Дядя,m,noun,Family & People
+508,Evidencija,Evidencije,Учет,f,noun,Work & Study
+509,Režim,Režimi,Режим,m,noun,Basics
+510,Celina,Celine,Целое,f,noun,Basics
+511,Virus,Virusi,Вирус,m,noun,Body & Health
+512,Izraz,Izrazi,Выражение,m,noun,Communication
+513,Zdravlje,,Здоровье,n,noun,Body & Health
+514,Zima,Zime,Зима,f,noun,Time & Calendar
+515,Desetak,Desetine,Десяток,m,noun,Basics
+516,Dubina,Dubine,Глубина,f,noun,Basics
+517,Mreža,Mreže,Сеть,f,noun,Basics
+518,Student,Studenti,Студент,m,noun,Work & Study
+519,Sekunda,Sekunde,Секунда,f,noun,Time & Calendar
+520,Brzina,Brzine,Скорость,f,noun,Basics
+521,Pretraga,Pretrage,Поиск,f,noun,Basics
+522,Suština,Suštine,Суть,f,noun,Basics
+523,Porez,Porezi,Налог,m,noun,Basics
+524,Greška,Greške,Ошибка,f,noun,Basics
+525,Prihod,Prihodi,Доход,m,noun,Basics
+526,Reditelj,Reditelji,Режиссер,m,noun,Work & Study
+527,Površina,Površine,Поверхность,f,noun,Basics
+528,Osećaj,Osećaji,Ощущение,m,noun,Basics
+529,Mapa,Mape,Карта,f,noun,Objects & Items
+530,Klub,Klubovi,Клуб,m,noun,Places & City
+531,Stanica,Stanice,Станция,f,noun,Places & City
+532,Revolucija,Revolucije,Революция,f,noun,Basics
+533,Koleno,Kolena,Колено,n,noun,Body & Health
+534,Ministarstvo,Ministarstva,Министерство,n,noun,Work & Study
+535,Staklo,Stakla,Стекло,n,noun,Objects & Items
+536,Sprat,Spratovi,Этаж,m,noun,Places & City
+537,Visina,Visine,Высота,f,noun,Basics
+538,Baka,Bake,Бабушка,f,noun,Family & People
+539,Slušalica,Slušalice,Трубка,f,noun,Objects & Items
+540,Gas,Gasovi,Газ,m,noun,Basics
+541,Majstor,Majstori,Мастер,m,noun,Work & Study
+542,Ponašanje,Ponašanja,Поведение,n,noun,Basics
+543,Glavni grad,Glavni gradovi,Столица,m,noun,Places & City
+544,Mehanizam,Mehanizmi,Механизм,m,noun,Objects & Items
+545,Emisija,Emisije,Передача,f,noun,Communication
+546,Sposobnost,Sposobnosti,Способность,f,noun,Basics
+547,Pristup,Pristupi,Подход,m,noun,Basics
+548,Energija,Energije,Энергия,f,noun,Basics
+549,Postojanje,Postojanja,Существование,n,noun,Basics
+550,Izvršenje,Izvršenja,Исполнение,n,noun,Work & Study
+551,Bioskop,Bioskopi,Кино,m,noun,Places & City
+552,Žaljenje,Žaljenja,Сожаление,n,noun,Basics
+553,Zamenik,Zamenici,Заместитель,m,noun,Work & Study
+554,Resurs,Resursi,Ресурс,m,noun,Basics
+555,Akcija,Akcije,Акция,f,noun,Basics
+556,Rođenje,Rođenja,Рождение,n,noun,Time & Calendar
+557,Administracija,Administracije,Администрация,f,noun,Work & Study
+558,Cena,Cene,Стоимость,f,noun,Basics
+559,Osmeh,Osmesi,Улыбка,m,noun,Communication
+560,Glumac,Glumci,Артист,m,noun,Work & Study
+561,Komšija,Komšije,Сосед,m,noun,Family & People
+562,Fraza,Fraze,Фраза,f,noun,Communication
+563,Figura,Figure,Фигура,f,noun,Basics
+564,Subjekt,Subjekti,Субъект,m,noun,Basics
+565,Reakcija,Reakcije,Реакция,f,noun,Basics
+566,Spisak,Spiskovi,Список,m,noun,Basics
+567,Fotografija,Fotografije,Фотография,f,noun,Objects & Items
+568,Novinar,Novinari,Журналист,m,noun,Work & Study
+569,Maj,Majevi,Май,m,noun,Time & Calendar
+570,Prekršaj,Prekršaji,Нарушение,m,noun,Basics
+571,Sednica,Sednice,Заседание,f,noun,Work & Study
+572,Gužva,Gužve,Толпа,f,noun,Places & City
+573,Biće,Bića,Существо,n,noun,Basics
+574,Osobina,Osobine,Свойство,f,noun,Basics
+575,Dug,Dugovi,Долг,m,noun,Basics
+576,Generacija,Generacije,Поколение,f,noun,Family & People
+577,Životinja,Životinje,Животное,f,noun,Basics
+578,Šema,Šeme,Схема,f,noun,Basics
+579,Napor,Napori,Усилие,m,noun,Basics
+580,Razlika,Razlike,Отличие,f,noun,Basics
+581,Ostrvo,Ostrva,Остров,n,noun,Places & City
+582,Protivnik,Protivnici,Противник,m,noun,Family & People
+583,Talas,Talasi,Волна,m,noun,Basics
+584,Realizacija,Realizacije,Реализация,f,noun,Work & Study
+585,Stranica,Stranice,Страница,f,noun,Objects & Items
+586,Formiranje,Formiranja,Формирование,n,noun,Basics
+587,Stanovnik,Stanovnici,Житель,m,noun,Family & People
+588,Lepota,Lepote,Красота,f,noun,Basics
+589,Ptica,Ptice,Птица,f,noun,Basics
+590,Biljка,Biljke,Растение,f,noun,Basics
+591,Senka,Senke,Тень,f,noun,Basics
+592,Pojava,Pojave,Явление,f,noun,Basics
+593,Hram,Hramovi,Храм,m,noun,Places & City
+594,Miris,Mirisi,Запах,m,noun,Basics
+595,Rakija,Rakije,Водка,f,noun,Food & Drinks
+596,Prisustvo,Prisustva,Наличие,n,noun,Basics
+597,Užas,Užasi,Ужас,m,noun,Basics
+598,Odeća,Odeće,Одежда,f,noun,Objects & Items
+599,Fotelja,Fotelje,Кресло,f,noun,Objects & Items
+600,Bolesnik,Bolesnici,Больной,m,noun,Body & Health
+601,Voz,Vozovi,Поезд,m,noun,Objects & Items
+602,Univerzitet,Univerziteti,Университет,m,noun,Work & Study
+603,Tradicija,Tradicije,Традиция,f,noun,Basics
+604,Adresa,Adrese,Адрес,f,noun,Places & City
+605,Decembar,Decembri,Декабрь,m,noun,Time & Calendar
+606,Dlan,Dlanovi,Ладонь,m,noun,Body & Health
+607,Podatak,Podaci,Сведение,m,noun,Communication
+608,Cvet,Cvetovi,Цветок,m,noun,Basics
+609,Lider,Lideri,Лидер,m,noun,Work & Study
+610,Oktobar,Oktobri,Октябрь,m,noun,Time & Calendar
+611,Čas,Časovi,Занятие,m,noun,Work & Study
+612,Septembar,Septembri,Сентябрь,m,noun,Time & Calendar
+613,Prostorija,Prostorije,Помещение,f,noun,Places & City
+614,Januar,Januari,Январь,m,noun,Time & Calendar
+615,Gledalac,Gledaoci,Зритель,m,noun,Work & Study
+616,Redakcija,Redakcije,Редакция,f,noun,Work & Study
+617,Stil,Stilovi,Стиль,m,noun,Basics
+618,Proleće,Proleća,Весна,n,noun,Time & Calendar
+619,Faktor,Faktori,Фактор,m,noun,Basics
+620,Avgust,Avgusti,Август,m,noun,Time & Calendar
+621,Vest,Vesti,Известие,f,noun,Communication
+622,Zavisnost,Zavisnosti,Зависимость,f,noun,Basics
+623,Obezbeđenje,Obezbeđenja,Охрана,n,noun,Basics
+624,Oprema,Opreme,Оборудование,f,noun,Objects & Items
+625,Koncert,Koncerti,Концерт,m,noun,Basics
+626,Odeljenje,Odeljenja,Отделение,n,noun,Work & Study
+627,Trošak,Troškovi,Расход,m,noun,Basics
+628,Izložba,Izložbe,Выставка,f,noun,Basics
+629,Policija,Policije,Милиция,f,noun,Work & Study
+630,Prelaz,Prelazi,Переход,m,noun,Places & City
+631,Epoha,Epohe,Эпоха,f,noun,Time & Calendar
+632,Zapad,,Запад,m,noun,Places & City
+633,Delo,Dela,Произведение,n,noun,Work & Study
+634,Domovina,Domovine,Родина,f,noun,Places & City
+635,Vlasništvo,Vlasništva,Собственность,n,noun,Basics
+636,Tajna,Tajne,Тайна,f,noun,Basics
+637,Trava,Trave,Трава,f,noun,Basics
+638,Kamp,Kampovi,Лагерь,m,noun,Places & City
+639,Imovina,Imovine,Имущество,f,noun,Basics
+640,Krevet,Kreveti,Кровать,m,noun,Objects & Items
+641,Aparat,Aparati,Аппарат,m,noun,Objects & Items
+642,Sredina,Sredine,Середина,f,noun,Places & City
+643,Mart,Martovi,Март,m,noun,Time & Calendar
+644,Klijent,Klijenti,Клиент,m,noun,Work & Study
+645,Dama,Dame,Дама,f,noun,Family & People
+646,Front,Frontovi,Фронт,m,noun,Basics
+647,Grana,Grane,Отрасль,f,noun,Work & Study
+648,Razgovor,Razgovori,Беседа,m,noun,Communication
+649,Zakonodavstvo,Zakonodavstva,Законодательство,n,noun,Work & Study
+650,Prodaja,Prodaje,Продажа,f,noun,Work & Study
+651,Povećanje,Povećanja,Повышение,n,noun,Basics
+652,Muzej,Muzeji,Музей,m,noun,Places & City
+653,Trag,Tragovi,След,m,noun,Basics
+654,Pukovnik,Pukovnici,Полковник,m,noun,Work & Study
+655,Sumnja,Sumnje,Сомнение,f,noun,Basics
+656,Razumevanje,Razumevanja,Понимание,n,noun,Communication
+657,April,Aprili,Апрель,m,noun,Time & Calendar
+658,Knez,Kneževi,Князь,m,noun,Family & People
+659,Riba,Ribe,Рыба,f,noun,Food & Drinks
+660,Misao,Misli,Дума,f,noun,Communication
+661,Kodeks,Kodeksi,Кодекс,m,noun,Work & Study
+662,Dan,Dani,Сутки,m,noun,Time & Calendar
+663,Čudo,Čuda,Чудо,n,noun,Basics
+664,Vrat,Vratovi,Шея,m,noun,Body & Health
+665,Sudija,Sudije,Судья,m,noun,Work & Study
+666,Krov,Krovovi,Крыша,m,noun,Places & City
+667,Raspoloženje,Raspoloženja,Настроение,n,noun,Basics
+668,Tok,Tokovi,Поток,m,noun,Basics
+669,Funkcija,Funkcije,Должность,f,noun,Work & Study
+670,Zločin,Zločini,Преступление,m,noun,Basics
+671,Mozak,Mozgovi,Мозг,m,noun,Body & Health
+672,Čast,,Честь,f,noun,Basics
+673,Položaj,Položaji,Пост,m,noun,Work & Study
+674,Jevrejin,Jevreji,Еврей,m,noun,Family & People
+675,Jun,Junovi,Июнь,m,noun,Time & Calendar
+676,Stotina,Stotine,Сотня,f,noun,Basics
+677,Kiša,Kiše,Дождь,f,noun,Places & City
+678,Stepenice,Stepenice,Лестница,f,noun,Objects & Items
+679,Vikendica,Vikendice,Дача,f,noun,Places & City
+680,Instalacija,Instalacije,Установка,f,noun,Work & Study
+681,Pojava,Pojave,Появление,f,noun,Basics
+682,Prijem,Prijemi,Получение,m,noun,Basics
+683,Uzorak,Uzorci,Образец,m,noun,Basics
+684,Cev,Cevi,Труба,f,noun,Objects & Items
+685,Glavno,,Главное,n,noun,Basics
+686,Jesen,Jeseni,Осень,f,noun,Time & Calendar
+687,Odelo,Odela,Костюм,n,noun,Objects & Items
+688,Baba,Babe,Баба,f,noun,Family & People
+689,Vrednost,Vrednosti,Ценность,f,noun,Basics
+690,Obaveza,Obaveze,Обязанность,f,noun,Work & Study
+691,Predstava,Predstave,Пьеса,f,noun,Basics
+692,Tabela,Tabele,Таблица,f,noun,Basics
+693,Vino,Vina,Вино,n,noun,Food & Drinks
+694,Uspomena,Uspomene,Воспоминание,f,noun,Basics
+695,Konj,Konji,Лошадь,m,noun,Basics
+696,Kolega,Kolege,Коллега,m,noun,Work & Study
+697,Organizam,Organizmi,Организм,m,noun,Body & Health
+698,Učenik,Učenici,Ученик,m,noun,Work & Study
+699,Ustanova,Ustanove,Учреждение,f,noun,Work & Study
+700,Otkriće,Otkrića,Открытие,n,noun,Basics
+701,Tom,Tomovi,Том,m,noun,Basics
+702,Osobina,Osobine,Черта,f,noun,Basics
+703,Karakteristika,Karakteristike,Характеристика,f,noun,Basics
+704,Izvršavanje,Izvršavanja,Выполнение,n,noun,Work & Study
+705,Odbrana,Odbrane,Оборона,f,noun,Basics
+706,Nastup,Nastupi,Выступление,m,noun,Basics
+707,Temperatura,Temperature,Температура,f,noun,Basics
+708,Perspektiva,Perspektive,Перспектива,f,noun,Basics
+709,Drugarica,Drugarice,Подруга,f,noun,Family & People
+710,Naređenje,Naređenja,Приказ,n,noun,Work & Study
+711,Žrtva,Žrtve,Жертва,f,noun,Basics
+712,Kilometar,Kilometri,Километр,m,noun,Basics
+713,Rasprava,Rasprave,Спор,f,noun,Communication
+714,Ukus,Ukusi,Вкус,m,noun,Basics
+715,Znak,Znakovi,Признак,m,noun,Basics
+716,Industrija,Industrije,Промышленность,f,noun,Work & Study
+717,Amerikanac,Amerikanci,Американец,m,noun,Family & People
+718,Čelo,Čela,Лоб,n,noun,Body & Health
+719,Zaključak,Zaključci,Заключение,m,noun,Communication
+720,Istok,,Восток,m,noun,Places & City
+721,Izuzetak,Izuzeci,Исключение,m,noun,Basics
+722,Odluka,Odluke,Постановление,f,noun,Work & Study
+723,Sloj,Slojevi,Слой,m,noun,Basics
+724,Bok,Bokovi,Бок,m,noun,Body & Health
+725,Jul,Julovi,Июль,m,noun,Time & Calendar
+726,Prevod,Prevodi,Перевод,m,noun,Communication
+727,Sekretar,Sekretari,Секретарь,m,noun,Work & Study
+728,Komad,Komadi,Кусок,m,noun,Basics
+729,Sluh,,Слух,m,noun,Body & Health
+730,Korist,Koristi,Польза,f,noun,Basics
+731,Poziv,Pozivi,Звонок,m,noun,Communication
+732,Atmosfera,Atmosfere,Обстановка,f,noun,Basics
+733,Službenik,Službenici,Чиновник,m,noun,Work & Study
+734,Sporazum,Sporazumi,Соглашение,m,noun,Work & Study
+735,Detalj,Detalji,Деталь,m,noun,Basics
+736,Rus,Rusi,Русский,m,noun,Family & People
+737,Tišina,Tišine,Тишина,f,noun,Basics
+738,Plata,Plate,Зарплата,f,noun,Work & Study
+739,Karta,Karte,Билет,f,noun,Places & City
+740,Poklon,Pokloni,Подарок,m,noun,Objects & Items
+741,Zatvor,Zatvori,Тюрьма,m,noun,Places & City
+742,Kutija,Kutije,Ящик,f,noun,Objects & Items
+743,Takmičenje,Takmičenja,Конкурс,n,noun,Basics
+744,Knjižica,Knjižice,Книжка,f,noun,Objects & Items
+745,Proučavanje,Proučavanja,Изучение,n,noun,Work & Study
+746,Molba,Molbe,Просьба,f,noun,Communication
+747,Car,Carevi,Царь,m,noun,Family & People
+748,Publika,Publike,Публика,f,noun,Basics
+749,Smeh,Smehovi,Смех,m,noun,Basics
+750,Poruka,Poruke,Сообщение,f,noun,Communication
+751,Pretnja,Pretnje,Угроза,f,noun,Basics
+752,Nevolja,Nevolje,Беда,f,noun,Basics
+753,Blok,Blokovi,Блок,m,noun,Basics
+754,Dostignuće,Dostignuća,Достижение,n,noun,Basics
+755,Svrha,Svrhe,Назначение,f,noun,Basics
+756,Reklama,Reklame,Реклама,f,noun,Basics
+757,Portret,Portreti,Портрет,m,noun,Objects & Items
+758,Ulje,Ulja,Масло,n,noun,Food & Drinks
+759,Čaša,Čaše,Стакан,f,noun,Objects & Items
+760,Lekcija,Lekcije,Урок,f,noun,Work & Study
+761,Sat,Satovi,Часы,m,noun,Objects & Items
+762,Uzbuna,Uzbune,Крик,f,noun,Communication
+763,Stvaralaštvo,Stvaralaštva,Творчество,n,noun,Basics
+764,Televizor,Televizori,Телевизор,m,noun,Objects & Items
+765,Alat,Alati,Инструмент,m,noun,Objects & Items
+766,Koncept,Koncepti,Концепция,m,noun,Basics
+767,Poručnik,Poručnici,Лейтенант,m,noun,Work & Study
+768,Ekran,Ekrani,Экран,m,noun,Objects & Items
+769,Dno,Dna,Дно,n,noun,Basics
+770,Stvarnost,Stvarnosti,Реальность,f,noun,Basics
+771,Kanal,Kanali,Канал,m,noun,Basics
+772,Poznanik,Poznanici,Знакомый,m,noun,Family & People
+773,Obraz,Obrazi,Щека,m,noun,Body & Health
+774,Sukob,Sukobi,Конфликт,m,noun,Basics
+775,Pregovori,Pregovori,Переговоры,m,noun,Communication
+776,Snimak,Snimci,Запись,m,noun,Objects & Items
+777,Vagon,Vagoni,Вагон,m,noun,Objects & Items
+778,Teren,Tereni,Площадка,m,noun,Places & City
+779,Posledica,Posledice,Последствие,f,noun,Basics
+780,Saradnja,Saradnje,Сотрудничество,f,noun,Work & Study
+781,Ogledalo,Ogledala,Зеркало,n,noun,Objects & Items
+782,Ton,Tonovi,Тон,m,noun,Basics
+783,Akademija,Akademije,Академия,f,noun,Work & Study
+784,Soba,Sobe,Палата,f,noun,Places & City
+785,Potreba,Potrebe,Потребность,f,noun,Basics
+786,Novembar,Novembri,Ноябрь,m,noun,Time & Calendar
+787,Povećanje,Povećanja,Увеличение,n,noun,Basics
+788,Budala,Budale,Дурак,f,noun,Family & People
+789,Putovanje,Putovanja,Поездка,n,noun,Basics
+790,Ručak,Ručkovi,Обед,m,noun,Food & Drinks
+791,Gubitak,Gubici,Потеря,m,noun,Basics
+792,Februar,Februari,Февраль,m,noun,Time & Calendar
+793,Događaj,Događaji,Мероприятие,m,noun,Basics
+794,Park,Parkovi,Парк,m,noun,Places & City
+795,Usvajanje,Usvajanja,Принятие,n,noun,Basics
+796,Uređaj,Uređaji,Устройство,m,noun,Objects & Items
+797,Materija,Materije,Вещество,f,noun,Basics
+798,Kategorija,Kategorije,Категория,f,noun,Basics
+799,Sezona,Sezone,Сезон,f,noun,Time & Calendar
+800,Hotel,Hoteli,Гостиница,m,noun,Places & City
+801,Izdanje,Izdanja,Издание,n,noun,Objects & Items
+802,Udruženje,Udruženja,Объединение,n,noun,Work & Study
+803,Mrak,Mrakovi,Темнота,m,noun,Basics
+804,Čovečanstvo,,Человечество,n,noun,Basics
+805,Točak,Točkovi,Колесо,m,noun,Objects & Items
+806,Opasnost,Opasnosti,Опасность,f,noun,Basics
+807,Dozvola,Dozvole,Разрешение,f,noun,Basics
+808,Uticaj,Uticaji,Воздействие,m,noun,Basics
+809,Kolektiv,Kolektivi,Коллектив,m,noun,Work & Study
+810,Kamera,Kamere,Камера,f,noun,Objects & Items
+811,Zaliha,Zalihe,Запас,f,noun,Basics
+812,Istraga,Istrage,Следствие,f,noun,Basics
+813,Dužina,Dužine,Длина,f,noun,Basics
+814,Krilo,Krila,Крыло,n,noun,Objects & Items
+815,Okrug,Okruzi,Округ,m,noun,Places & City
+816,Pozadina,Pozadine,Фон,f,noun,Basics
+817,Kandidat,Kandidati,Кандидат,m,noun,Work & Study
+818,Rođak,Rođaci,Родственник,m,noun,Family & People
+819,Pritisak,Pritisci,Давление,m,noun,Basics
+820,Prisustvo,Prisustva,Присутствие,n,noun,Basics
+821,Interakcija,Interakcije,Взаимодействие,f,noun,Basics
+822,Tabla,Table,Доска,f,noun,Objects & Items
+823,Partner,Partneri,Партнер,m,noun,Work & Study
+824,Motor,Motori,Двигатель,m,noun,Objects & Items
+825,Buka,Buke,Шум,f,noun,Basics
+826,Dostojanstvo,Dostojanstva,Достоинство,n,noun,Basics
+827,Greh,Grehovi,Грех,m,noun,Basics
+828,Nož,Noževi,Нож,m,noun,Objects & Items
+829,Let,Letovi,Полет,m,noun,Basics
+830,Strast,Strasti,Страсть,f,noun,Basics
+831,Ispitivanje,Ispitivanja,Испытание,n,noun,Basics
+832,Istina,Istine,True,f,noun,Basics
+833,Plaćanje,Plaćanja,Оплата,n,noun,Basics
+834,Razlika,Razlike,Разница,f,noun,Basics
+835,Vozač,Vozači,Водитель,m,noun,Work & Study
+836,Paket,Paketi,Пакет,m,noun,Objects & Items
+837,Smanjenje,Smanjenja,Снижение,n,noun,Basics
+838,Formula,Formule,Формула,f,noun,Basics
+839,Stomak,Stomaci,Живот,m,noun,Body & Health
+840,Kapital,Kapitali,Капитал,m,noun,Basics
+841,Most,Mostovi,Мост,m,noun,Places & City
+842,Vest,Vesti,Новость,f,noun,Communication
+843,Efekat,Efekti,Эффект,m,noun,Basics
+844,Ulaz,Ulazi,Вход,m,noun,Places & City
+845,Guverner,Guverneri,Губернатор,m,noun,Work & Study
+846,Izveštaj,Izveštaji,Доклад,m,noun,Work & Study
+847,Smena,Smene,Смена,f,noun,Basics
+848,Ubistvo,Ubistva,Убийство,n,noun,Basics
+849,Stručnjak,Stručnjaci,Эксперт,m,noun,Work & Study
+850,Autobus,Autobusi,Автобус,m,noun,Objects & Items
+851,Haljina,Haljine,Платье,f,noun,Objects & Items
+852,Kadar,Kadrovi,Кадр,m,noun,Basics
+853,Tetka,Tetke,Тетя,f,noun,Family & People
+854,Druženje,Druženja,Общение,n,noun,Communication
+855,Psihologija,Psihologije,Психология,f,noun,Work & Study
+856,Lav,Lavovi,Лев,m,noun,Basics
+857,Prag,Pragovi,Порог,m,noun,Places & City
+858,Provera,Provere,Проверка,f,noun,Work & Study
+859,Procedura,Procedure,Процедура,f,noun,Work & Study
+860,Radnik,Radnici,Рабочий,m,noun,Work & Study
+861,Popravka,Popravke,Ремонт,f,noun,Basics
+862,Obraćanje,Obraćanja,Обращение,n,noun,Communication
+863,Obuka,Obuke,Обучение,f,noun,Work & Study
+864,Očekivanje,Očekivanja,Ожидание,n,noun,Basics
+865,Spomenik,Spomenici,Памятник,m,noun,Places & City
+866,Koren,Koreni,Корень,m,noun,Basics
+867,Posmatranje,Posmatranja,Наблюдение,n,noun,Basics
+868,Slovo,Slova,Буква,n,noun,Basics
+869,Dokaz,Dokazi,Доказательство,m,noun,Basics
+870,Priznanje,Priznanja,Признание,n,noun,Basics
+871,Krevet,Kreveti,Постель,m,noun,Objects & Items
+872,Štab,Štabovi,Штаб,m,noun,Work & Study
+873,Vlasnik,Vlasnici,Владелец,m,noun,Family & People
+874,Računar,Računari,Компьютер,m,noun,Objects & Items
+875,Inženjer,Inženjeri,Инженер,m,noun,Work & Study
+876,Starica,Starice,Старуха,f,noun,Family & People
+877,Čamac,Čamci,Лодка,m,noun,Objects & Items
+878,Raketa,Rakete,Ракета,f,noun,Objects & Items
+879,Serija,Serije,Серия,f,noun,Basics
+880,Šala,Šale,Шутка,f,noun,Communication
+881,Vrh,Vrhovi,Вершина,m,noun,Places & City
+882,Izdanje,Izdanja,Выпуск,n,noun,Basics
+883,Pesnica,Pesnice,Кулак,f,noun,Body & Health
+884,Led,Ledovi,Лед,m,noun,Basics
+885,Trgovina,Trgovine,Торговля,f,noun,Work & Study
+886,Nafta,,Нефть,f,noun,Basics
+887,Omladina,,Молодежь,f,noun,Family & People
+888,Cifra,Cifre,Цифра,f,noun,Basics
+889,Korpus,Korpusi,Корпус,m,noun,Objects & Items
+890,Mana,Mane,Недостаток,f,noun,Basics
+891,Čizma,Čizme,Сапог,f,noun,Objects & Items
+892,Suština,Suštine,Сущность,f,noun,Basics
+893,Talenat,Talenti,Талант,m,noun,Basics
+894,Efikasnost,Efikasnosti,Эффективность,f,noun,Basics
+895,Traka,Trake,Полоса,f,noun,Basics
+896,Glavno,,Основное,n,noun,Basics
+897,Razmatranje,Razmatranja,Рассмотрение,n,noun,Basics
+898,Okupljanje,Okupljanja,Сбор,n,noun,Basics
+899,Država,Države,Штат,f,noun,Places & City
+900,Istražitelj,Istražitelji,Следователь,m,noun,Work & Study
+901,Smeštaj,Smeštaji,Жилье,m,noun,Places & City
+902,Vreća,Vreće,Мешок,f,noun,Objects & Items
+903,Opis,Opisi,Описание,m,noun,Communication
+904,Žbun,Žbunovi,Куст,m,noun,Places & City
+905,Odbijanje,Odbijanja,Отказ,n,noun,Basics
+906,Dvorac,Dvorci,Замок,m,noun,Places & City
+907,Urednik,Urednici,Редактор,m,noun,Work & Study
+908,Palata,Palate,Дворец,f,noun,Places & City
+909,Briga,Brige,Забота,f,noun,Basics
+910,Pivo,Piva,Пиво,n,noun,Food & Drinks
+911,Kauč,Kauči,Диван,m,noun,Objects & Items
+912,Stočić,Stočići,Столик,m,noun,Objects & Items
+913,Eksperiment,Eksperimenti,Эксперимент,m,noun,Work & Study
+914,Štampa,Štampe,Печать,f,noun,Work & Study
+915,Prsten,Prstenje,Кольцо,m,noun,Objects & Items
+916,Pištolj,Pištolji,Пистолет,m,noun,Objects & Items
+917,Vaspitanje,Vaspitanja,Воспитание,n,noun,Basics
+918,Rukovodstvo,Rukovodstva,Начальство,n,noun,Work & Study
+919,Zanimanje,Zanimanja,Профессия,n,noun,Work & Study
+920,Kapija,Kapije,Ворота,f,noun,Places & City
+921,Dobro,,Добро,n,noun,Basics
+922,Prijateljstvo,Prijateljstva,Дружба,n,noun,Basics
+923,Mir,Mirovi,Покой,m,noun,Basics
+924,Rizik,Rizici,Риск,m,noun,Basics
+925,Kraj,Krajevi,Окончание,m,noun,Time & Calendar
+926,Dim,Dimovi,Дым,m,noun,Basics
+927,Brak,Brakovi,Брак,m,noun,Basics
+928,Veličina,Veličine,Величина,f,noun,Basics
+929,Poruka,Poruke,Записка,f,noun,Communication
+930,Inicijativa,Inicijative,Инициатива,f,noun,Basics
+931,Savest,Savesti,Совесть,f,noun,Basics
+932,Aktivnost,Aktivnosti,Активность,f,noun,Basics
+933,Kost,Kosti,Кость,f,noun,Body & Health
+934,Sport,Sportovi,Спорт,m,noun,Basics
+935,Kredit,Krediti,Кредит,m,noun,Basics
+936,Gospod,,Господь,m,noun,Basics
+937,Major,Majori,Майор,m,noun,Work & Study
+938,Konferencija,Konferencije,Конференция,f,noun,Work & Study
+939,Plafon,Plafoni,Потолок,m,noun,Places & City
+940,Biblioteka,Biblioteke,Библиотека,f,noun,Places & City
+941,Pomoćnik,Pomoćnici,Помощник,m,noun,Work & Study
+942,Konstrukcija,Konstrukcije,Конструкция,f,noun,Basics
+943,Odmor,Odmori,Отдых,m,noun,Basics
+944,Olovka,Olovke,Ручка,f,noun,Objects & Items
+945,Metal,Metali,Металл,m,noun,Basics
+946,Tužilac,Tužioci,Прокурор,m,noun,Work & Study
+947,Prevoz,Prevozi,Транспорт,m,noun,Basics
+948,Poezija,,Поэзия,f,noun,Work & Study
+949,Spajanje,Spajanja,Соединение,n,noun,Basics
+950,Boja,Boje,Краска,f,noun,Basics
+951,Razdaljina,Razdaljine,Расстояние,f,noun,Basics
+952,San,Snovi,Мечта,m,noun,Basics
+953,Selo,Sela,Село,n,noun,Places & City
+954,Hrana,,Еда,f,noun,Food & Drinks
+955,Zlo,Zla,Зло,n,noun,Basics
+956,Odeljenje,Odeljenja,Подразделение,n,noun,Work & Study
+957,Radnja,Radnje,Сюжет,f,noun,Basics
+958,Granica,Granice,Рубеж,f,noun,Places & City
+959,Signal,Signali,Сигнал,m,noun,Basics
+960,Atmosfera,Atmosfere,Атмосфера,f,noun,Basics
+961,Krst,Krstovi,Крест,m,noun,Basics
+962,Težina,Težine,Вес,f,noun,Basics
+963,Eksplozija,Eksplozije,Взрыв,f,noun,Basics
+964,Kontakt,Kontakti,Контакт,m,noun,Basics
+965,Cigareta,Cigarete,Сигарета,f,noun,Objects & Items
+966,Oduševljenje,Oduševljenja,Восторг,n,noun,Basics
+967,Zlato,,Золото,n,noun,Basics
+968,Tlo,Tla,Почва,n,noun,Basics
+969,Nagrada,Nagrade,Премия,f,noun,Basics
+970,Kralj,Kraljevi,Король,m,noun,Family & People
+971,Ulaz,Ulazi,Подъезд,m,noun,Places & City
+972,Šansa,Šanse,Шанс,f,noun,Basics
+973,Automat,Automati,Автомат,m,noun,Objects & Items
+974,Porudžbina,Porudžbine,Заказ,f,noun,Basics
+975,Dečak,Dečaci,Мальчишка,m,noun,Family & People
+976,Naočare,Naočare,Очки,f,noun,Objects & Items
+977,Trenutak,Trenuci,Миг,m,noun,Time & Calendar
+978,Stvar,Stvari,Штука,f,noun,Basics
+979,Čitanje,Čitanja,Чтение,n,noun,Basics
+980,Naselje,Naselja,Поселок,n,noun,Places & City
+981,Svedok,Svedoci,Свидетель,m,noun,Family & People
+982,Stopa,Stope,Ставка,f,noun,Basics
+983,Iznenadjenje,Iznenadjenja,Удивление,n,noun,Basics
+984,Rep,Repovi,Хвост,m,noun,Basics
+985,Pesak,,Песок,m,noun,Places & City
+986,Skretanje,Skretanja,Поворот,n,noun,Basics
+987,Povratak,Povraci,Возвращение,m,noun,Basics
+988,Trenutak,Trenuci,Мгновение,m,noun,Time & Calendar
+989,Status,Statusi,Статус,m,noun,Basics
+990,Jezero,Jezera,Озеро,n,noun,Places & City
+991,Stroj,Strojevi,Строй,m,noun,Basics
+992,Parametar,Parametri,Параметр,m,noun,Basics
+993,Bajka,Bajke,Сказка,f,noun,Basics
+994,Tendencija,Tendencije,Тенденция,f,noun,Basics
+995,Krivica,Krivice,Вина,f,noun,Basics
+996,Disanje,Disanja,Дыхание,n,noun,Body & Health
+997,Verzija,Verzije,Версия,f,noun,Basics
+998,Razmera,Razmere,Масштаб,f,noun,Basics
+999,Manastir,Manastiri,Монастырь,m,noun,Places & City
+1000,Domaćica,Domaćice,Хозяйка,f,noun,Family & People
+1001,Ćerka,Ćerke,Дочка,f,noun,Family & People
+1002,Ples,Plesovi,Танец,m,noun,Basics
+1003,Eksploatacija,Eksploatacije,Эксплуатация,f,noun,Work & Study
+1004,Komunista,Komunisti,Коммунист,m,noun,Family & People
+1005,Penzija,Penzije,Пенсия,f,noun,Basics
+1006,Prijatelj,Prijatelji,Приятель,m,noun,Family & People
+1007,Objašnjenje,Objašnjenja,Объяснение,n,noun,Communication
+1008,Komplet,Kompleti,Набор,m,noun,Objects & Items
+1009,Proizvođač,Proizvođači,Производитель,m,noun,Work & Study
+1010,Prašina,N/A,Пыль,f,noun,Basics
+1011,Filozofija,Filozofije,Философия,f,noun,Work & Study
+1012,Snaga,Snage,Мощность,f,noun,Basics
+1013,Obaveza,Obaveze,Обязательство,f,noun,Basics
+1014,Odlazak,Odlasci,Уход,m,noun,Basics
+1015,Grlo,Grla,Горло,n,noun,Body & Health
+1016,Kriza,Krize,Кризис,f,noun,Basics
+1017,Uputstvo,Uputstva,Указание,n,noun,Basics
+1018,Plata,Plate,Плата,f,noun,Basics
+1019,Jabuka,Jabuke,Яблоко,f,noun,Food & Drinks
+1020,Preparat,Preparati,Препарат,m,noun,Basics
+1021,Stvarnost,Stvarnosti,Действительность,f,noun,Basics
+1022,Moskovljanin,Moskovljani,Москвич,m,noun,Family & People
+1023,Ostatak,Ostaci,Остаток,m,noun,Basics
+1024,Slika,Slike,Изображение,f,noun,Objects & Items
+1025,Dogovor,Dogovori,Сделка,m,noun,Work & Study
+1026,Sastav,Sastavi,Сочинение,m,noun,Work & Study
+1027,Kupac,Kupci,Покупатель,m,noun,Work & Study
+1028,Tenk,Tenkovi,Танк,m,noun,Objects & Items
+1029,Trošak,Troškovi,Затрата,m,noun,Basics
+1030,Red,Redovi,Строка,m,noun,Basics
+1031,Jedinica,Jedinice,Единица,f,noun,Basics
+1032,Obrada,Obrade,Обработка,f,noun,Work & Study
+1033,Šampionat,Šampionati,Чемпионат,m,noun,Basics
